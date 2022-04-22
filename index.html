@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Navbars Preview</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<!-- ============== HEADER ============== -->
+
+		<header class="header" id="header">
+			<div class="header__body">
+				<div class="container">
+					<div class="header__body-inner">
+
+						<div class="header__logo">
+							<a href="#">
+								<img src="img/id_dev_logo.png" alt="Logo">
+							</a>
+						</div><!-- ./logo -->
+
+						<nav class="header__nav">
+							<ul class="header__list">
+								<li class="header__item"><a href="#home"
+										class="header__link header__link--active">home</a></li>
+								<li class="header__item"><a href="#features" class="header__link">features</a></li>
+								<li class="header__item"><a href="#demo" class="header__link">demo</a></li>
+							</ul><!-- ./first-level-menu -->
+						</nav><!-- ./header__nav -->
+
+
+						<div class="header__burger">
+							<span></span>
+						</div><!-- ./burger -->
+					</div><!-- ./header__body-inner -->
+				</div><!-- ./container -->
+			</div><!-- ./header__body -->
+		</header>
+		<main class="main">
+
+			<!-- ============== ICONS ============== -->
+			<svg class="svg-sprite" style="display: none;">
+				<symbol id="menu-icon" viewBox="0 0 124 124">
+					<g>
+						<path d="M112,6H12C5.4,6,0,11.4,0,18s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,6,112,6z"></path>
+						<path
+							d="M112,50H12C5.4,50,0,55.4,0,62c0,6.6,5.4,12,12,12h100c6.6,0,12-5.4,12-12C124,55.4,118.6,50,112,50z">
+						</path>
+						<path d="M112,94H12c-6.6,0-12,5.4-12,12s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,94,112,94z">
+						</path>
+					</g>
+				</symbol>
+				<symbol id="full-icon" viewBox="0 0 64 64">
+					<g>
+						<path
+							d="m61 45v14a2.006 2.006 0 0 1 -2 2h-14a3 3 0 0 1 0-6h5.76l-14.51-14.51a3 3 0 0 1 4.24-4.24l14.51 14.51v-5.76a3 3 0 0 1 6 0z">
+						</path>
+						<path
+							d="m61 5v14a3 3 0 0 1 -6 0v-5.76l-14.51 14.51a3 3 0 1 1 -4.24-4.24l14.51-14.51h-5.76a3 3 0 0 1 0-6h14a2.006 2.006 0 0 1 2 2z">
+						</path>
+						<path
+							d="m27.75 23.51a3 3 0 1 1 -4.24 4.24l-14.51-14.51v5.76a3 3 0 0 1 -6 0v-14a2.006 2.006 0 0 1 2-2h14a3 3 0 0 1 0 6h-5.76z">
+						</path>
+						<path
+							d="m27.75 36.25a2.994 2.994 0 0 1 0 4.24l-14.51 14.51h5.76a3 3 0 0 1 0 6h-14a2.006 2.006 0 0 1 -2-2v-14a3 3 0 0 1 6 0v5.76l14.51-14.51a3 3 0 0 1 4.24 0z">
+						</path>
+					</g>
+				</symbol>
+				<symbol id="responsive-icon" viewBox="0 0 396.494 396.494">
+					<g>
+						<path
+							d="M304.42,330.901h-43.219c-1.56,0-2.834-1.273-2.834-2.834v-10.52c0-1.559-1.275-2.834-2.834-2.834h-60.475   c-1.56,0-2.835,1.275-2.835,2.834v10.52c0,1.561-1.275,2.834-2.835,2.834h-32.491c-1.56,0-2.835,1.275-2.835,2.834v12.17   c0,1.559,1.275,2.834,2.835,2.834h147.521c1.559,0,2.834-1.275,2.834-2.834v-12.17C307.254,332.179,305.979,330.901,304.42,330.901   z">
+						</path>
+
+						<path
+							d="M377.032,46.368h-308.4c-10.73,0-19.459,8.73-19.459,19.462c0,0,0,37.109,0,50.761c0,6.711-0.498,7.66,4.004,7.66    c2.391,0,5.039,0,7.72,0c3.778,0,3.003-0.949,3.003-7.785c0-13.621,0-50.636,0-50.636c0-2.565,2.168-4.733,4.732-4.733h308.4    c2.563,0,4.731,2.168,4.731,4.733v189.999h-219.87c0,0-7.749-0.014-7.749,10.006c0,5.941,0,17.823,0,23.766    c0,10.006,8,10.006,8,10.006h214.888c10.729,0,19.461-8.729,19.461-19.459V65.83C396.493,55.099,387.763,46.368,377.032,46.368z     M222.833,282.804c-4.845,0-8.771-3.926-8.771-8.768s3.926-8.77,8.771-8.77c4.84,0,8.767,3.928,8.767,8.77    S227.673,282.804,222.833,282.804z">
+						</path>
+						<path
+							d="M124.125,141.633H12.559C5.632,141.633,0,147.266,0,154.193v183.372c0,6.926,5.632,12.561,12.559,12.561h111.566    c6.923,0,12.559-5.635,12.559-12.561V154.193C136.684,147.266,131.048,141.633,124.125,141.633z M54.58,154.443h27.523    c1.313,0,2.38,1.064,2.38,2.381c0,1.314-1.066,2.379-2.38,2.379H54.58c-1.315,0-2.379-1.065-2.379-2.379    C52.201,155.507,53.265,154.443,54.58,154.443z M68.175,341.304c-3.59,0-6.5-2.91-6.5-6.5s2.91-6.5,6.5-6.5s6.5,2.91,6.5,6.5    S71.765,341.304,68.175,341.304z M125.893,322.2c0,1.676-1.342,3.047-2.98,3.047H13.774c-1.639,0-2.98-1.371-2.98-3.047V169.825    c0-1.676,1.342-3.046,2.98-3.046h109.139c1.639,0,2.98,1.371,2.98,3.046V322.2z">
+						</path>
+					</g>
+				</symbol>
+				<symbol id="valid-icon" viewBox="0 0 24 24">
+					<g>
+						<path
+							d="m18.5 24h-16c-1.378 0-2.5-1.122-2.5-2.5v-16c0-1.378 1.122-2.5 2.5-2.5h12.5c.276 0 .5.224.5.5s-.224.5-.5.5h-12.5c-.827 0-1.5.673-1.5 1.5v16c0 .827.673 1.5 1.5 1.5h16c.827 0 1.5-.673 1.5-1.5v-8.5c0-.276.224-.5.5-.5s.5.224.5.5v8.5c0 1.378-1.122 2.5-2.5 2.5z">
+						</path>
+
+						<path
+							d="m12.5 15.25c-.128 0-.256-.049-.354-.146l-4.5-4.5c-.195-.195-.195-.512 0-.707s.512-.195.707 0l4.146 4.146 10.647-10.647c.195-.195.512-.195.707 0s.195.512 0 .707l-11 11c-.097.098-.225.147-.353.147z">
+						</path>
+					</g>
+				</symbol>
+				<symbol id="css-icon" viewBox="0 0 504.771 504.771">
+					<polygon
+						points="75.089,23.98 58.245,108.778 403.138,108.778 392.289,163.309 47.111,163.309 30.549,248.104 375.445,248.104    356.027,344.887 217.273,390.856 96.789,344.887 105.069,302.921 20.272,302.921 0,404.559 199.286,480.791 428.831,404.559    504.771,23.98  ">
+					</polygon>
+				</symbol>
+				<symbol id="to-top-icon" viewBox="0 0 455.111 455.111">
+					<g>
+						<path
+							d="M406.756,455.111h-358.4C21.333,455.111,0,433.778,0,406.756v-358.4C0,21.333,21.333,0,48.356,0  h358.4c27.022,0,48.356,21.333,48.356,48.356v358.4C455.111,433.778,433.778,455.111,406.756,455.111z">
+						</path>
+						<path
+							d="M366.933,0c-17.067,73.956-61.156,153.6-129.422,221.867C164.978,294.4,78.222,339.911,0,354.133  V48.356C0,21.333,21.333,0,48.356,0H366.933z">
+						</path>
+
+						<path
+							d="M287.289,174.933H268.8v71.111c0,7.111-5.689,12.8-12.8,12.8h-56.889c-7.111,0-12.8-5.689-12.8-12.8   v-71.111h-18.489c-9.956,0-15.644-11.378-9.956-19.911L217.6,75.378c5.689-7.111,15.644-7.111,19.911,0l59.733,79.644   C302.933,163.556,297.244,174.933,287.289,174.933z"
+							fill="#ffffff"></path>
+						<path d="M136.533,304.356v78.222h-22.756v-78.222H86.756v-18.489h76.8v18.489H136.533z"
+							fill="#ffffff"></path>
+						<path
+							d="M258.844,369.778C248.889,379.733,237.511,384,221.867,384c-14.222,0-27.022-4.267-36.978-14.222   c-9.956-9.956-14.222-21.333-14.222-35.556s4.267-25.6,14.222-35.556s21.333-14.222,36.978-14.222   c14.222,0,27.022,4.267,36.978,14.222s14.222,21.333,14.222,35.556S268.8,359.822,258.844,369.778z M250.311,334.222   c0-8.533-2.844-15.644-8.533-22.756c-5.689-5.689-12.8-8.533-19.911-8.533c-8.533,0-15.644,2.844-19.911,8.533   c-5.689,5.689-8.533,12.8-8.533,22.756c0,8.533,2.844,15.644,8.533,22.756c5.689,5.689,12.8,8.533,19.911,8.533   c8.533,0,15.644-2.844,19.911-8.533C247.467,349.867,250.311,342.756,250.311,334.222z"
+							fill="#ffffff"></path>
+						<path
+							d="M358.4,294.4c7.111,5.689,9.956,14.222,9.956,27.022c0,11.378-2.844,21.333-9.956,27.022   c-7.111,5.689-17.067,8.533-32.711,8.533h-12.8V384h-21.333v-96.711h34.133C341.333,285.867,351.289,288.711,358.4,294.4z    M342.756,332.8c2.844-2.844,4.267-7.111,4.267-12.8s-1.422-9.956-5.689-11.378c-2.844-2.844-8.533-2.844-15.644-2.844h-12.8   v32.711h14.222C334.222,337.067,339.911,335.644,342.756,332.8z"
+							fill="#ffffff"></path>
+					</g>
+				</symbol>
+				<symbol id="dropdown-menu-icon" viewBox="0 0 612 612">
+					<path
+						d="m0 71.993v468.014c0 29.811 24.2 53.993 54.031 53.993h503.937c29.818 0 54.032-24.176 54.032-53.993v-468.014c0-29.811-24.2-53.993-54.031-53.993h-503.938c-29.817 0-54.031 24.176-54.031 53.993zm576 158.924v309.09c0 9.922-8.084 17.993-18.031 17.993h-503.938c-9.955 0-18.031-8.07-18.031-17.993v-309.089c5.64 1.996 11.709 3.082 18.031 3.082h503.937c6.322 0 12.392-1.087 18.032-3.083zm-144-176.917h125.969c9.955 0 18.031 8.07 18.031 17.993v108.014c0 9.922-8.084 17.993-18.031 17.993h-125.969zm-396 17.993c0-9.922 8.084-17.993 18.031-17.993h341.969v144h-341.969c-9.955 0-18.031-8.07-18.031-17.993zm482.272 75.735c7.029 7.029 18.426 7.029 25.456 0 7.029-7.029 7.029-18.426 0-25.456l-27-27c-7.029-7.029-18.426-7.029-25.456 0l-27 27c-7.029 7.029-7.029 18.426 0 25.456 7.029 7.029 18.426 7.029 25.456 0l14.272-14.272zm-428.272-3.728h162.204c9.941 0 18-8.059 18-18s-8.059-18-18-18h-162.204c-9.941 0-18 8.059-18 18s8.059 18 18 18zm0 180h270.204c9.941 0 18-8.059 18-18s-8.059-18-18-18h-270.204c-9.941 0-18 8.059-18 18s8.059 18 18 18zm0 90h162.204c9.941 0 18-8.059 18-18s-8.059-18-18-18h-162.204c-9.941 0-18 8.059-18 18s8.059 18 18 18zm0 90h216.204c9.941 0 18-8.059 18-18s-8.059-18-18-18h-216.204c-9.941 0-18 8.059-18 18s8.059 18 18 18z">
+					</path>
+				</symbol>
+				<symbol id="svg-icon" viewBox="0 0 512 512">
+					<g>
+						<path
+							d="m512 256c0 141.386719-114.613281 256-256 256s-256-114.613281-256-256 114.613281-256 256-256 256 114.613281 256 256zm0 0">
+						</path>
+						<path
+							d="m149.113281 122.925781c0-6.027343 4.902344-10.933593 10.933594-10.933593h111.351563v44.070312c0 22.570312 18.363281 40.933594 40.9375 40.933594h43.996093v75.046875h30v-96.238281l-93.335937-93.8125h-132.949219c-22.570313 0-40.933594 18.363281-40.933594 40.933593v149.117188h30zm152.285157 33.136719v-23.089844l33.851562 34.023438h-22.914062c-6.03125 0-10.9375-4.902344-10.9375-10.933594zm0 0"
+							fill="#ffffff"></path>
+						<path
+							d="m363.625 341.976562v30h24.550781c-5.296875 9.519532-15.476562 15.988282-27.144531 16.03125-17.121094-.0625-31.03125-13.960937-31.03125-31.03125 0-17.113281 13.902344-31.03125 30.996094-31.03125 4.390625 0 8.628906.898438 12.597656 2.667969l12.226562-27.398437c-7.839843-3.496094-16.191406-5.269532-24.824218-5.269532-33.632813 0-60.996094 27.378907-60.996094 61.03125 0 33.574219 27.304688 60.902344 60.914062 61.03125h.238282c33.605468-.128906 60.910156-27.457031 60.910156-61.03125v-15zm0 0"
+							fill="#ffffff"></path>
+						<path
+							d="m149.996094 341.976562h-22.042969c-4.421875 0-8.015625-3.597656-8.015625-8.015624 0-4.421876 3.59375-8.019532 8.015625-8.019532h44.410156v-30h-44.410156c-20.960937 0-38.015625 17.054688-38.015625 38.019532 0 20.960937 17.054688 38.015624 38.015625 38.015624h22.042969c4.421875 0 8.015625 3.597657 8.015625 8.015626 0 4.421874-3.59375 8.015624-8.015625 8.015624h-58.027344v30h58.027344c20.960937 0 38.015625-17.054687 38.015625-38.015624 0-20.960938-17.054688-38.015626-38.015625-38.015626zm0 0"
+							fill="#ffffff"></path>
+						<path
+							d="m244.175781 365.371094-23.589843-67.394532h-27.476563l41.300781 117.996094h19.738282l40.710937-117.996094h-27.433594zm0 0"
+							fill="#ffffff"></path>
+					</g>
+				</symbol>
+				<symbol id="js-icon" viewBox="0 0 512.599 512.599">
+					<g>
+						<path
+							d="m457.21 512.599h-401.821c-30.59 0-55.389-24.799-55.389-55.389v-401.821c0-30.59 24.799-55.389 55.389-55.389h401.82c30.591 0 55.389 24.799 55.389 55.389v401.82c.001 30.591-24.798 55.39-55.388 55.39z">
+						</path>
+
+						<path d="m118.199 117.421h277.158v277.158h-277.158z" fill="#fff">
+						</path>
+						<path
+							d="m304.379 333.952c5.583 9.115 12.846 15.816 25.692 15.816 10.792 0 17.685-5.394 17.685-12.846 0-8.931-7.083-12.094-18.961-17.289l-6.511-2.794c-18.794-8.007-31.279-18.037-31.279-39.242 0-19.533 14.883-34.403 38.142-34.403 16.559 0 28.464 5.763 37.042 20.853l-20.281 13.022c-4.465-8.007-9.283-11.161-16.761-11.161-7.628 0-12.463 4.839-12.463 11.161 0 7.813 4.839 10.976 16.014 15.816l6.511 2.789c22.129 9.489 34.623 19.163 34.623 40.914 0 23.448-18.42 36.294-43.157 36.294-24.188 0-39.814-11.526-47.46-26.634zm-92.003 2.257c4.091 7.259 7.813 13.396 16.761 13.396 8.557 0 13.955-3.348 13.955-16.366v-88.558h26.044v88.91c0 26.968-15.811 39.242-38.89 39.242-20.853 0-32.929-10.792-39.07-23.789z">
+						</path>
+					</g>
+
+				</symbol>
+				<symbol id="dropdown-icon" viewBox="0 0 24 24">
+					<path
+						d="m19 2h-14a3 3 0 0 0 -3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-14a3 3 0 0 0 -3-3zm-2.29 8.72-4 4a1 1 0 0 1 -.71.28 1 1 0 0 1 -.71-.29l-4-4a1 1 0 0 1 1.42-1.41l3.29 3.28 3.3-3.28a1 1 0 1 1 1.41 1.42z">
+					</path>
+				</symbol>
+				<symbol id="update-icon" viewBox="0 0 487.23 487.23">
+					<g>
+						<path
+							d="M55.323,203.641c15.664,0,29.813-9.405,35.872-23.854c25.017-59.604,83.842-101.61,152.42-101.61    c37.797,0,72.449,12.955,100.23,34.442l-21.775,3.371c-7.438,1.153-13.224,7.054-14.232,14.512    c-1.01,7.454,3.008,14.686,9.867,17.768l119.746,53.872c5.249,2.357,11.33,1.904,16.168-1.205    c4.83-3.114,7.764-8.458,7.796-14.208l0.621-131.943c0.042-7.506-4.851-14.144-12.024-16.332    c-7.185-2.188-14.947,0.589-19.104,6.837l-16.505,24.805C370.398,26.778,310.1,0,243.615,0C142.806,0,56.133,61.562,19.167,149.06    c-5.134,12.128-3.84,26.015,3.429,36.987C29.865,197.023,42.152,203.641,55.323,203.641z">
+						</path>
+						<path
+							d="M464.635,301.184c-7.27-10.977-19.558-17.594-32.728-17.594c-15.664,0-29.813,9.405-35.872,23.854    c-25.018,59.604-83.843,101.61-152.42,101.61c-37.798,0-72.45-12.955-100.232-34.442l21.776-3.369    c7.437-1.153,13.223-7.055,14.233-14.514c1.009-7.453-3.008-14.686-9.867-17.768L49.779,285.089    c-5.25-2.356-11.33-1.905-16.169,1.205c-4.829,3.114-7.764,8.458-7.795,14.207l-0.622,131.943    c-0.042,7.506,4.85,14.144,12.024,16.332c7.185,2.188,14.948-0.59,19.104-6.839l16.505-24.805    c44.004,43.32,104.303,70.098,170.788,70.098c100.811,0,187.481-61.561,224.446-149.059    C473.197,326.043,471.903,312.157,464.635,301.184z">
+						</path>
+					</g>
+				</symbol>
+				<symbol id="js-simple-icon" viewBox="0 0 337.424 337.424">
+					<path
+						d="M209.124,216.584c10.313,16.839,23.731,29.217,47.462,29.217c19.935,0,32.67-9.964,32.67-23.731   c0-16.498-13.084-22.341-35.027-31.939L242.2,184.97c-34.718-14.791-57.783-33.321-57.783-72.493   c0-36.084,27.494-63.553,70.461-63.553c30.59,0,52.582,10.646,68.429,38.522l-37.465,24.056   c-8.249-14.791-17.148-20.618-30.964-20.618c-14.092,0-23.024,8.94-23.024,20.618c0,14.434,8.94,20.277,29.582,29.217l12.028,5.152   c40.879,17.53,63.959,35.401,63.959,75.581c0,43.317-34.028,67.048-79.726,67.048c-44.682,0-73.549-21.293-87.674-49.201   L209.124,216.584z M39.164,220.753c7.558,13.41,14.434,24.747,30.964,24.747c15.807,0,25.779-6.185,25.779-30.232V51.671h48.112   v164.246c0,49.818-29.208,72.493-71.843,72.493c-38.522,0-60.83-19.936-72.176-43.947L39.164,220.753z">
+					</path>
+				</symbol>
+				<symbol id=""></symbol>
+			</svg><!-- sprite -->
+
+			<section class="intro navigation" id="home">
+				<picture>
+					<source media="(max-width: 768px)" srcset="img/mockup_min.jpg">
+					<img loading="lazy" src="img/mockup.jpg" alt="Background">
+				</picture>
+				<div class="intro__inner">
+
+
+				</div>
+			</section><!-- ./intro -->
+
+			<section class="section navigation" id="features">
+				<header class="section__header">
+					<h2 class="section__title">features</h2>
+				</header>
+				<div class="features">
+					<div class="container">
+						<div class="features__inner">
+							<div class="features__item item-features">
+								<div class="item-features__icon">
+									<svg>
+										<use xlink:href="#menu-icon"></use>
+									</svg>
+								</div>
+								<h3 class="item-features__title">Off-Canvas Menu</h3>
+								<p class="item-features__text">off Canvas menu on default</p>
+							</div>
+							<div class="features__item item-features">
+								<div class="item-features__icon">
+									<svg>
+										<use xlink:href="#js-icon"></use>
+									</svg>
+								</div>
+								<h3 class="item-features__title">Pure JavaScript</h3>
+								<p class="item-features__text">Not uses jQuery or other javascript library.</p>
+							</div>
+							<div class="features__item item-features">
+								<div class="item-features__icon">
+									<svg>
+										<use xlink:href="#full-icon"></use>
+									</svg>
+								</div>
+								<h3 class="item-features__title">Full Page Menu</h3>
+								<p class="item-features__text">Full-Screen Menu</p>
+							</div>
+							<div class="features__item item-features">
+								<div class="item-features__icon">
+									<svg>
+										<use xlink:href="#responsive-icon"></use>
+									</svg>
+								</div>
+								<h3 class="item-features__title">Responsive Menu</h3>
+								<p class="item-features__text">Desktops, Tablets and Mobile</p>
+							</div>
+							<div class="features__item item-features">
+								<div class="item-features__icon">
+									<svg>
+										<use xlink:href="#valid-icon"></use>
+									</svg>
+								</div>
+								<h3 class="item-features__title">Cross Browser</h3>
+								<p class="item-features__text">Worked On All Major Browser</p>
+							</div>
+							<div class="features__item item-features">
+								<div class="item-features__icon">
+									<svg>
+										<use xlink:href="#css-icon"></use>
+									</svg>
+								</div>
+								<h3 class="item-features__title">Pure CSS3</h3>
+								<p class="item-features__text">CSS3 Code Without Image</p>
+							</div>
+							<div class="features__item item-features">
+								<div class="item-features__icon">
+									<svg>
+										<use xlink:href="#to-top-icon"></use>
+									</svg>
+								</div>
+								<h3 class="item-features__title">Fixed Menu</h3>
+								<p class="item-features__text">Fixed Top With Animation</p>
+							</div>
+							<div class="features__item item-features">
+								<div class="item-features__icon">
+									<svg>
+										<use xlink:href="#dropdown-menu-icon"></use>
+									</svg>
+								</div>
+								<h3 class="item-features__title">Multi level SubMenu</h3>
+								<p class="item-features__text">3 level SubMenu</p>
+							</div>
+							<div class="features__item item-features">
+								<div class="item-features__icon">
+									<svg>
+										<use xlink:href="#svg-icon"></use>
+									</svg>
+								</div>
+								<h3 class="item-features__title">SVG</h3>
+								<p class="item-features__text">Used SVG Icons</p>
+							</div>
+							<div class="features__item item-features">
+								<div class="item-features__icon">
+									<svg>
+										<use xlink:href="#dropdown-icon"></use>
+									</svg>
+								</div>
+								<h3 class="item-features__title">Dropdowns</h3>
+								<p class="item-features__text">You can use like a dropdown menu</p>
+							</div>
+							<div class="features__item item-features">
+								<div class="item-features__icon">
+									<svg>
+										<use xlink:href="#js-simple-icon"></use>
+									</svg>
+								</div>
+								<h3 class="item-features__title">Javascript options</h3>
+								<p class="item-features__text">Add features to your navigation using the javascript
+									options.</p>
+							</div>
+							<div class="features__item item-features">
+								<div class="item-features__icon">
+									<svg>
+										<use xlink:href="#update-icon"></use>
+									</svg>
+								</div>
+								<h3 class="item-features__title">Free Update</h3>
+								<p class="item-features__text">Free updates, bug fixes and improvements</p>
+							</div>
+						</div>
+					</div><!-- ./container -->
+
+				</div><!-- ./features -->
+			</section><!-- ./section features -->
+
+			<section class="section navigation" id="demo">
+				<header class="section__header">
+					<h2 class="section__title">demo</h2>
+				</header>
+				<div class="demo">
+					<div class="container">
+						<div class="demo__inner">
+							<div class="demo__item item-demo">
+								<a href="#" class="link">Mega menu variant 1</a>
+							</div>
+							<div class="demo__item item-demo">
+								<a href="#" class="link">Mega menu</a>
+							</div>
+							<div class="demo__item item-demo">
+								<a href="#" class="link">Mega menu</a>
+							</div>
+							<div class="demo__item item-demo">
+								<a href="#" class="link">Mega menu</a>
+							</div>
+							<div class="demo__item item-demo">
+								<a href="#" class="link">Mega menu</a>
+							</div>
+							<div class="demo__item item-demo">
+								<a href="#" class="link">Mega menu</a>
+							</div>
+						</div>
+					</div><!-- ./container -->
+
+				</div><!-- ./demo -->
+			</section><!-- ./section demo -->
+
+			<section class="section">
+				<header class="section__header">
+					<h2 class="section__title">testing browsers</h2>
+				</header>
+				<div class="browsers">
+					<div class="container">
+						<div class="browsers__inner">
+							<div class="browsers__item item-browsers">
+								<div class="item-browsers__image">
+									<img src="img/browsers/chrome.png" alt="Chrome">
+								</div>
+							</div>
+							<div class="browsers__item item-browsers">
+								<div class="item-browsers__image">
+									<img src="img/browsers/firefox.png" alt="Firefox">
+								</div>
+							</div>
+							<div class="browsers__item item-browsers">
+								<div class="item-browsers__image">
+									<img src="img/browsers/opera.png" alt="Opera">
+								</div>
+							</div>
+							<div class="browsers__item item-browsers">
+								<div class="item-browsers__image">
+									<img src="img/browsers/edge.png" alt="Edge">
+								</div>
+							</div>
+							<div class="browsers__item item-browsers">
+								<div class="item-browsers__image">
+									<img src="img/browsers/safari.png" alt="Safari">
+								</div>
+							</div>
+							<div class="browsers__item item-browsers">
+								<div class="item-browsers__image">
+									<img src="img/browsers/ie.png" alt="IE">
+								</div>
+							</div>
+						</div>
+					</div><!-- ./container -->
+
+				</div><!-- ./browsers -->
+			</section><!-- ./section browsers -->
+
+		</main>
+		<footer class="footer">
+			<div class="copyright"></div>
+		</footer><!-- ./footer -->
+
+	</div>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
