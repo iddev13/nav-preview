@@ -453,11 +453,14 @@ body.mouse .header__link {
 		font-size: 32px;
 		line-height: 1.4;
 		position: relative;
-
+		opacity: 0;
+		visibility: hidden;
+		transform: translate(0, 100%);
+		transition: opacity 0.3s ease, transform 0.3s ease;
 		&::after {
 			content: '';
 			display: block;
-			width: 100%;
+			width: 0;
 			height: 2px;
 			border-radius: 2px;
 			background: $red;
@@ -465,35 +468,43 @@ body.mouse .header__link {
 			top: 100%;
 			left: 0;
 			z-index: 1;
+			transform-origin: left;
+			transition: all .3s ease .2s;
 		}
 		&::selection {
 			color: #fff;
 			background: $red;
 		}
-	}
+	}	
 }
+
+.section__title.anim-active {
+	&::after {
+		width: 100%;
+	}
+} 
 // SECTION .//////////////////////////////////////////
 
 // LINKS ============================================
 
-	.link {
-		display: inline-block;
-		width: 90%;
-		font-size: 18px;
-		color: #fff;
-		background: $red;
-		padding: 10px 20px;
-		border-radius: 10px;
-		position: relative;
-		text-align: center;
-		transition: all 0.3s ease;
+.link {
+	display: inline-block;
+	width: 90%;
+	font-size: 18px;
+	color: #fff;
+	background: $red;
+	padding: 10px 20px;
+	border-radius: 10px;
+	position: relative;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+body.mouse .link {
+	&:hover {
+		background: $red2;
+		box-shadow: 0px 0px 5px 1px $red3;
 	}
-	body.mouse .link {
-		&:hover {
-			background: $red2;
-			box-shadow: 0px 0px 5px 1px $red3;
-		}
-	}
+}
 
 // LINKS .//////////////////////////////////////////
 
@@ -565,6 +576,9 @@ body.mouse .header__link {
 		overflow: hidden;
 		padding: 25px 10px;
 		text-align: center;
+		opacity: 0;
+		visibility: hidden;
+		transform: translate(-100px, 0);
 		transition: all 0.3s ease;
 	}
 }
@@ -641,10 +655,19 @@ body.mouse .item-features {
 		overflow: hidden;
 		padding: 20px 5px;
 		text-align: center;
+		overflow: hidden;
+		transform: scale(0);
+		opacity: 0;
+		visibility: hidden;
+		transition: all .3s ease;
 		@media (max-width: 768px) {
 			padding: 10px 5px;
 		}
 	}
+}
+
+.demo__item.anim-active {
+	transform: scale(1);
 }
 
 // DEMO .//////////////////////////////////////////
@@ -668,6 +691,10 @@ body.mouse .item-features {
 		border-radius: 50%;
 		overflow: hidden;
 		padding: 10px;
+		opacity: 0;
+		visibility: hidden;
+		transform: translate(0, 20px);
+		transition: all 0.3s ease;
 	}
 }
 .item-browsers {
@@ -708,6 +735,14 @@ body.mouse .item-features {
 }
 
 // FOOTER .//////////////////////////////////////////
+
+// ANIMATION =========================
+
+.anim-active {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0);
+} 
 
 // @KEYFRAMES =========================
 @keyframes show__header {

@@ -29,8 +29,6 @@ function burgerFunction() {
 	const body = document.querySelector('body')
 	const burgerLinks = burgerList.querySelectorAll('.header__link')
 
-	console.log(burgerLinks);
-
 	burger.addEventListener('click', function () {
 		burger.classList.toggle('active')
 		burgerList.classList.toggle('active')

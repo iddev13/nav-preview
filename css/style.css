@@ -453,12 +453,20 @@ body.mouse .header__link:hover.header__link::after {
   font-size: 32px;
   line-height: 1.4;
   position: relative;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .section__title::after {
   content: '';
   display: block;
-  width: 100%;
+  width: 0;
   height: 2px;
   border-radius: 2px;
   background: #ff0263;
@@ -466,6 +474,10 @@ body.mouse .header__link:hover.header__link::after {
   top: 100%;
   left: 0;
   z-index: 1;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: all .3s ease .2s;
+  transition: all .3s ease .2s;
 }
 
 .section__title::-moz-selection {
@@ -476,6 +488,10 @@ body.mouse .header__link:hover.header__link::after {
 .section__title::selection {
   color: #fff;
   background: #ff0263;
+}
+
+.section__title.anim-active::after {
+  width: 100%;
 }
 
 .link {
@@ -579,6 +595,10 @@ body.mouse .link:hover {
   overflow: hidden;
   padding: 25px 10px;
   text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate(-100px, 0);
+          transform: translate(-100px, 0);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -674,12 +694,24 @@ body.mouse .item-features:hover {
   overflow: hidden;
   padding: 20px 5px;
   text-align: center;
+  overflow: hidden;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 @media (max-width: 768px) {
   .demo__item {
     padding: 10px 5px;
   }
+}
+
+.demo__item.anim-active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .browsers {
@@ -710,6 +742,12 @@ body.mouse .item-features:hover {
   border-radius: 50%;
   overflow: hidden;
   padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate(0, 20px);
+          transform: translate(0, 20px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .item-browsers__image {
@@ -753,6 +791,13 @@ body.mouse .item-features:hover {
   .footer {
     padding: 0;
   }
+}
+
+.anim-active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 @-webkit-keyframes show__header {
