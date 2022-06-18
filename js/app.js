@@ -1,5 +1,14 @@
 window.onload = function () {
-	document.querySelector('.wrapper').classList.add('active')
+	// PRELOADER
+	const preloader = document.querySelector('#preloader')
+	preloader.classList.add('preloader--hide')
+
+	setTimeout(() => {
+		preloader.remove()
+	}, 1000);
+
+
+	// FOOTER
 	const copyRightDate = document.querySelector('.copyright')
 	copyRightDate.innerHTML = `${new Date().getFullYear()} | <span>All Rights Reserved</span>`
 };
@@ -8,7 +17,6 @@ const safariFixed = () => {
 	let header = document.querySelector(".header");
 
 	if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
-		alert('Вы используете Safari браузер.');
 		header.classList.add("header__fixed")
 	} else {
 		window.onscroll = function showHeader() {
